@@ -1,47 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.2 on win32)" generated="2024-12-22T18:29:00.040431" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.2 on win32)" generated="2024-12-22T20:18:50.842670" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="N:\RobotFrameworkBook\Section2\TestProject\Tests">
 <suite id="s1-s1" name="TestCase1" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase1.robot">
-<test id="s1-s1-t1" name="TEST" line="12">
+<test id="s1-s1-t1" name="TEST" line="17">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T18:29:00.067162" level="INFO">This is my first test</msg>
-<arg>This is my first test</arg>
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'This is my first variable' ]</msg>
+<msg time="2024-12-22T20:18:50.872174" level="INFO">This is my first variable</msg>
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<arg>${MY-VARIABLE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T18:29:00.067162" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-22T20:18:50.871173" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'This is my second variable' ]</msg>
+<msg time="2024-12-22T20:18:50.872174" level="INFO">This is my second variable</msg>
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<arg>${MY-VARIABLE2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-22T20:18:50.872174" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'test3' ]</msg>
+<msg time="2024-12-22T20:18:50.872174" level="INFO">test3</msg>
+<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<arg>${LIST}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-22T20:18:50.872174" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'test' ]</msg>
+<msg time="2024-12-22T20:18:50.873115" level="INFO">test</msg>
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<arg>${LIST}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-22T20:18:50.873115" level="INFO">testUser</msg>
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[username]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'demo' ]</msg>
+<msg time="2024-12-22T20:18:50.873115" level="INFO">demo</msg>
+<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
 </kw>
 <tag>demo</tag>
-<status status="PASS" start="2024-12-22T18:29:00.066197" elapsed="0.001965"/>
+<status status="PASS" start="2024-12-22T20:18:50.870173" elapsed="0.003960"/>
 </test>
 <doc>This is my first test</doc>
-<status status="PASS" start="2024-12-22T18:29:00.060162" elapsed="0.009000"/>
+<status status="PASS" start="2024-12-22T20:18:50.864175" elapsed="0.010521"/>
 </suite>
 <suite id="s1-s2" name="TestCase2" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase2.robot">
 <test id="s1-s2-t1" name="TEST2" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T18:29:00.073992" level="INFO">This is my second test</msg>
+<msg time="2024-12-22T20:18:50.877765" level="TRACE">Arguments: [ 'This is my second test' ]</msg>
+<msg time="2024-12-22T20:18:50.877765" level="INFO">This is my second test</msg>
+<msg time="2024-12-22T20:18:50.877765" level="TRACE">Return: None</msg>
 <arg>This is my second test</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T18:29:00.073006" elapsed="0.000986"/>
+<status status="PASS" start="2024-12-22T20:18:50.877765" elapsed="0.000000"/>
 </kw>
 <tag>demo2</tag>
-<status status="PASS" start="2024-12-22T18:29:00.073006" elapsed="0.000986"/>
+<status status="PASS" start="2024-12-22T20:18:50.876766" elapsed="0.000999"/>
 </test>
-<status status="PASS" start="2024-12-22T18:29:00.070739" elapsed="0.004113"/>
+<status status="PASS" start="2024-12-22T20:18:50.875769" elapsed="0.003687"/>
 </suite>
 <suite id="s1-s3" name="TestCase3" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase3.robot">
 <test id="s1-s3-t1" name="TEST3" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T18:29:00.077877" level="INFO">This is my third test</msg>
+<msg time="2024-12-22T20:18:50.883087" level="TRACE">Arguments: [ 'This is my third test' ]</msg>
+<msg time="2024-12-22T20:18:50.883087" level="INFO">This is my third test</msg>
+<msg time="2024-12-22T20:18:50.884087" level="TRACE">Return: None</msg>
 <arg>This is my third test</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T18:29:00.077877" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-22T20:18:50.883087" elapsed="0.001000"/>
 </kw>
 <tag>demo2</tag>
-<status status="PASS" start="2024-12-22T18:29:00.077877" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-22T20:18:50.883087" elapsed="0.001000"/>
 </test>
-<status status="PASS" start="2024-12-22T18:29:00.075860" elapsed="0.002998"/>
+<status status="PASS" start="2024-12-22T20:18:50.879957" elapsed="0.005129"/>
 </suite>
-<status status="PASS" start="2024-12-22T18:29:00.042447" elapsed="0.037411"/>
+<status status="PASS" start="2024-12-22T20:18:50.844095" elapsed="0.040991"/>
 </suite>
 <statistics>
 <total>
