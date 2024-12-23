@@ -1,17 +1,7 @@
 *** Settings ***
 Documentation    This is my first test
 Library    OperatingSystem
-
-*** Keywords ***
-
-
-*** Variables ***
-${MY-VARIABLE}     This is my first variable
-${MY-VARIABLE2}    This is my second variable 
-
-@{LIST}     test    test2   test3   test4
-
-&{DICTIONARY}     username=testUser     password=demo
+Resource    ../Resource/resource.robot
 
 *** Test Cases ***
 TEST
@@ -22,3 +12,10 @@ TEST
     Log        ${LIST}[0]
     Log        ${DICTIONARY}[username]
     Log        ${DICTIONARY}[password]
+    Log My Username
+    Log My Password
+    Log Username And Password 1
+    Log Username And Password 2
+    Log My Specific Username    ${DICTIONARY}[username]
+    Log My Specific Username And Password    ${DICTIONARY2}[username]    ${DICTIONARY2}[password]
+

@@ -1,93 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.2 on win32)" generated="2024-12-22T20:18:50.842670" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.2 on win32)" generated="2024-12-23T15:35:42.428414" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="N:\RobotFrameworkBook\Section2\TestProject\Tests">
 <suite id="s1-s1" name="TestCase1" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase1.robot">
-<test id="s1-s1-t1" name="TEST" line="17">
+<test id="s1-s1-t1" name="TEST" line="7">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'This is my first variable' ]</msg>
-<msg time="2024-12-22T20:18:50.872174" level="INFO">This is my first variable</msg>
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.474191" level="TRACE">Arguments: [ 'This is my first variable' ]</msg>
+<msg time="2024-12-23T15:35:42.474191" level="INFO">This is my first variable</msg>
+<msg time="2024-12-23T15:35:42.474191" level="TRACE">Return: None</msg>
 <arg>${MY-VARIABLE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.871173" elapsed="0.001001"/>
+<status status="PASS" start="2024-12-23T15:35:42.474191" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'This is my second variable' ]</msg>
-<msg time="2024-12-22T20:18:50.872174" level="INFO">This is my second variable</msg>
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.475205" level="TRACE">Arguments: [ 'This is my second variable' ]</msg>
+<msg time="2024-12-23T15:35:42.475205" level="INFO">This is my second variable</msg>
+<msg time="2024-12-23T15:35:42.475205" level="TRACE">Return: None</msg>
 <arg>${MY-VARIABLE2}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.872174" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.475205" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Arguments: [ 'test3' ]</msg>
-<msg time="2024-12-22T20:18:50.872174" level="INFO">test3</msg>
-<msg time="2024-12-22T20:18:50.872174" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.475205" level="TRACE">Arguments: [ 'test3' ]</msg>
+<msg time="2024-12-23T15:35:42.475205" level="INFO">test3</msg>
+<msg time="2024-12-23T15:35:42.475205" level="TRACE">Return: None</msg>
 <arg>${LIST}[2]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.872174" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.475205" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'test' ]</msg>
-<msg time="2024-12-22T20:18:50.873115" level="INFO">test</msg>
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.476210" level="TRACE">Arguments: [ 'test' ]</msg>
+<msg time="2024-12-23T15:35:42.476210" level="INFO">test</msg>
+<msg time="2024-12-23T15:35:42.476210" level="TRACE">Return: None</msg>
 <arg>${LIST}[0]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.476210" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'testUser' ]</msg>
-<msg time="2024-12-22T20:18:50.873115" level="INFO">testUser</msg>
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.476210" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-23T15:35:42.477207" level="INFO">testUser</msg>
+<msg time="2024-12-23T15:35:42.477207" level="TRACE">Return: None</msg>
 <arg>${DICTIONARY}[username]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.476210" elapsed="0.000997"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Arguments: [ 'demo' ]</msg>
-<msg time="2024-12-22T20:18:50.873115" level="INFO">demo</msg>
-<msg time="2024-12-22T20:18:50.873115" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.477207" level="TRACE">Arguments: [ 'demo' ]</msg>
+<msg time="2024-12-23T15:35:42.477207" level="INFO">demo</msg>
+<msg time="2024-12-23T15:35:42.477207" level="TRACE">Return: None</msg>
 <arg>${DICTIONARY}[password]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.873115" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.477207" elapsed="0.000000"/>
+</kw>
+<kw name="Log My Username" owner="resource">
+<msg time="2024-12-23T15:35:42.478204" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.478204" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-23T15:35:42.478204" level="INFO">testUser</msg>
+<msg time="2024-12-23T15:35:42.478204" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[username]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.478204" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.478204" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.477207" elapsed="0.000997"/>
+</kw>
+<kw name="Log My Password" owner="resource">
+<msg time="2024-12-23T15:35:42.478204" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Arguments: [ 'demo' ]</msg>
+<msg time="2024-12-23T15:35:42.479209" level="INFO">demo</msg>
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.479209" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.478204" elapsed="0.001005"/>
+</kw>
+<kw name="Log Username And Password 1" owner="resource">
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-23T15:35:42.479209" level="INFO">testUser</msg>
+<msg time="2024-12-23T15:35:42.479209" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[username]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.479209" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.480204" level="TRACE">Arguments: [ 'demo' ]</msg>
+<msg time="2024-12-23T15:35:42.480204" level="INFO">demo</msg>
+<msg time="2024-12-23T15:35:42.480204" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.479209" elapsed="0.000995"/>
+</kw>
+<msg time="2024-12-23T15:35:42.480204" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.479209" elapsed="0.000995"/>
+</kw>
+<kw name="Log Username And Password 2" owner="resource">
+<msg time="2024-12-23T15:35:42.480204" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log My Username" owner="resource">
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-23T15:35:42.481204" level="INFO">testUser</msg>
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[username]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.481204" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.480204" elapsed="0.001000"/>
+</kw>
+<kw name="Log My Password" owner="resource">
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Arguments: [ 'demo' ]</msg>
+<msg time="2024-12-23T15:35:42.481204" level="INFO">demo</msg>
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.481204" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.481204" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.481204" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-12-23T15:35:42.480204" elapsed="0.001000"/>
+</kw>
+<kw name="Log My Specific Username" owner="resource">
+<msg time="2024-12-23T15:35:42.482575" level="TRACE">Arguments: [ ${USERNAME}='testUser' ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.482575" level="TRACE">Arguments: [ 'testUser' ]</msg>
+<msg time="2024-12-23T15:35:42.482575" level="INFO">testUser</msg>
+<msg time="2024-12-23T15:35:42.482575" level="TRACE">Return: None</msg>
+<arg>${USERNAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.482575" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.482575" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}[username]</arg>
+<status status="PASS" start="2024-12-23T15:35:42.482358" elapsed="0.000217"/>
+</kw>
+<kw name="Log My Specific Username And Password" owner="resource">
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Arguments: [ ${USERNAME}='testUser2' | ${PASSWORD}='demo2' ]</msg>
+<kw name="Log My Specific Username" owner="resource">
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Arguments: [ ${USERNAME}='testUser2' ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Arguments: [ 'testUser2' ]</msg>
+<msg time="2024-12-23T15:35:42.483586" level="INFO">testUser2</msg>
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Return: None</msg>
+<arg>${USERNAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.483586" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Return: None</msg>
+<arg>${USERNAME}</arg>
+<status status="PASS" start="2024-12-23T15:35:42.483586" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Arguments: [ 'demo2' ]</msg>
+<msg time="2024-12-23T15:35:42.483586" level="INFO">demo2</msg>
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Return: None</msg>
+<arg>${PASSWORD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.483586" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.483586" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY2}[username]</arg>
+<arg>${DICTIONARY2}[password]</arg>
+<status status="PASS" start="2024-12-23T15:35:42.482575" elapsed="0.001011"/>
 </kw>
 <tag>demo</tag>
-<status status="PASS" start="2024-12-22T20:18:50.870173" elapsed="0.003960"/>
+<status status="PASS" start="2024-12-23T15:35:42.473192" elapsed="0.011476"/>
 </test>
 <doc>This is my first test</doc>
-<status status="PASS" start="2024-12-22T20:18:50.864175" elapsed="0.010521"/>
+<status status="PASS" start="2024-12-23T15:35:42.447710" elapsed="0.037874"/>
 </suite>
 <suite id="s1-s2" name="TestCase2" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase2.robot">
-<test id="s1-s2-t1" name="TEST2" line="5">
+<test id="s1-s2-t1" name="TEST2" line="6">
+<kw name="Log My Specific Username And Password" owner="resource">
+<msg time="2024-12-23T15:35:42.493582" level="TRACE">Arguments: [ ${USERNAME}='testUser2' | ${PASSWORD}='demo2' ]</msg>
+<kw name="Log My Specific Username" owner="resource">
+<msg time="2024-12-23T15:35:42.493582" level="TRACE">Arguments: [ ${USERNAME}='testUser2' ]</msg>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.877765" level="TRACE">Arguments: [ 'This is my second test' ]</msg>
-<msg time="2024-12-22T20:18:50.877765" level="INFO">This is my second test</msg>
-<msg time="2024-12-22T20:18:50.877765" level="TRACE">Return: None</msg>
-<arg>This is my second test</arg>
+<msg time="2024-12-23T15:35:42.493582" level="TRACE">Arguments: [ 'testUser2' ]</msg>
+<msg time="2024-12-23T15:35:42.493582" level="INFO">testUser2</msg>
+<msg time="2024-12-23T15:35:42.493582" level="TRACE">Return: None</msg>
+<arg>${USERNAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.877765" elapsed="0.000000"/>
+<status status="PASS" start="2024-12-23T15:35:42.493582" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.494598" level="TRACE">Return: None</msg>
+<arg>${USERNAME}</arg>
+<status status="PASS" start="2024-12-23T15:35:42.493582" elapsed="0.001016"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-23T15:35:42.494598" level="TRACE">Arguments: [ 'demo2' ]</msg>
+<msg time="2024-12-23T15:35:42.494598" level="INFO">demo2</msg>
+<msg time="2024-12-23T15:35:42.494598" level="TRACE">Return: None</msg>
+<arg>${PASSWORD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-23T15:35:42.494598" elapsed="0.000000"/>
+</kw>
+<msg time="2024-12-23T15:35:42.494598" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY2}[username]</arg>
+<arg>${DICTIONARY2}[password]</arg>
+<status status="PASS" start="2024-12-23T15:35:42.493582" elapsed="0.001016"/>
 </kw>
 <tag>demo2</tag>
-<status status="PASS" start="2024-12-22T20:18:50.876766" elapsed="0.000999"/>
+<status status="PASS" start="2024-12-23T15:35:42.492581" elapsed="0.002017"/>
 </test>
-<status status="PASS" start="2024-12-22T20:18:50.875769" elapsed="0.003687"/>
+<status status="PASS" start="2024-12-23T15:35:42.486669" elapsed="0.008928"/>
 </suite>
 <suite id="s1-s3" name="TestCase3" source="N:\RobotFrameworkBook\Section2\TestProject\Tests\TestCase3.robot">
 <test id="s1-s3-t1" name="TEST3" line="5">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-12-22T20:18:50.883087" level="TRACE">Arguments: [ 'This is my third test' ]</msg>
-<msg time="2024-12-22T20:18:50.883087" level="INFO">This is my third test</msg>
-<msg time="2024-12-22T20:18:50.884087" level="TRACE">Return: None</msg>
+<msg time="2024-12-23T15:35:42.498582" level="TRACE">Arguments: [ 'This is my third test' ]</msg>
+<msg time="2024-12-23T15:35:42.498582" level="INFO">This is my third test</msg>
+<msg time="2024-12-23T15:35:42.498582" level="TRACE">Return: None</msg>
 <arg>This is my third test</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-12-22T20:18:50.883087" elapsed="0.001000"/>
+<status status="PASS" start="2024-12-23T15:35:42.498582" elapsed="0.000000"/>
 </kw>
 <tag>demo2</tag>
-<status status="PASS" start="2024-12-22T20:18:50.883087" elapsed="0.001000"/>
+<status status="PASS" start="2024-12-23T15:35:42.498582" elapsed="0.000000"/>
 </test>
-<status status="PASS" start="2024-12-22T20:18:50.879957" elapsed="0.005129"/>
+<status status="PASS" start="2024-12-23T15:35:42.496582" elapsed="0.003000"/>
 </suite>
-<status status="PASS" start="2024-12-22T20:18:50.844095" elapsed="0.040991"/>
+<status status="PASS" start="2024-12-23T15:35:42.430416" elapsed="0.069758"/>
 </suite>
 <statistics>
 <total>
