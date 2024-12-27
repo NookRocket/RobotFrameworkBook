@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.2 on win32)" generated="2024-12-27T14:10:55.037306" rpa="false" schemaversion="5">
+<suite id="s1" name="Open Application" source="N:\RobotFrameworkBook\Section3\Android_Project\Tests\Open_Application.robot">
+<test id="s1-t1" name="Open_Application" line="5">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2024-12-27T14:10:55.249273" level="TRACE">Arguments: [ remote_url='http://localhost:4723' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.android.chrome' | appActivity='org.chromium.chrome.browser.document.ChromeLauncherActivity' | automationName='UiAutomator2' ]</msg>
+<msg time="2024-12-27T14:10:55.249772" level="DEBUG">POST http://localhost:4723/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.android.chrome", "appium:appActivity": "org.chromium.chrome.browser.document.ChromeLauncherActivity", "appium:automationName": "UiAutomator2"}}}</msg>
+<msg time="2024-12-27T14:10:55.250287" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg time="2024-12-27T14:11:00.801210" level="DEBUG">http://localhost:4723 "POST /session HTTP/1.1" 200 979</msg>
+<msg time="2024-12-27T14:11:00.801546" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platformName":"Android","deviceName":"emulator-5554","appPackage":"com.android.chrome","appActivity":"org.chromium.chrome.browser.document.ChromeLauncherActivity","automationName":"UiAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"emulator-5554","appPackage":"com.android.chrome","appActivity":"org.chromium.chrome.browser.document.ChromeLauncherActivity","automationName":"UiAutomator2"},"deviceUDID":"emulator-5554","pixelRatio":"2.75","statBarHeight":66,"viewportRect":{"left":0,"top":66,"width":1080,"height":2154},"deviceApiLevel":29,"platformVersion":"10","deviceManufacturer":"Google","deviceModel":"Android SDK built for x86","deviceScreenSize":"1080x2220","deviceScreenDensity":440},"sessionId":"5bcf90b4-c008-4318-819a-a8a08ab3ce56"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '979', 'ETag': 'W/"3d3-ge3U5yTqQA0luqhkp1LGqkqZzfs"', 'Date': 'Fri, 27 Dec 2024 07:11:00 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-12-27T14:11:00.801709" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-27T14:11:00.802851" level="DEBUG">Opened application with session id 5bcf90b4-c008-4318-819a-a8a08ab3ce56</msg>
+<msg time="2024-12-27T14:11:00.802851" level="TRACE">Return: 1</msg>
+<arg>remote_url=http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.android.chrome</arg>
+<arg>appActivity=org.chromium.chrome.browser.document.ChromeLauncherActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-27T14:10:55.249273" elapsed="5.553578"/>
+</kw>
+<status status="PASS" start="2024-12-27T14:10:55.248195" elapsed="5.554656"/>
+</test>
+<status status="PASS" start="2024-12-27T14:10:55.039789" elapsed="5.764061"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
