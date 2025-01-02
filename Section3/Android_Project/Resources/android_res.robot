@@ -80,9 +80,13 @@ Signin With User
     Input Password    ${PASSWORD-EDITTEXT}    ${PASSWORD}
     # Wait Until Page Contains Element    ${LOGIN-SUBMIT-BUTTON}
     Click Element    ${LOGIN-SUBMIT-BUTTON}
-    Wait Until Page Contains Element     ${HELP-IMPROVE-PAGE}
-    Deny Help Improve Page
-    Deny Permission
+    # Wait Until Page Contains Element     ${HELP-IMPROVE-PAGE}
+    ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${HELP-IMPROVE-PAGE}
+    Run Keyword If    '${ALERT}' == 'True'    Deny Help Improve Page
+    # Deny Help Improve 
+    # ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${PERMISSION-MESSAGE}
+    # Run Keyword If    '${ALERT}' == 'True'    Deny Permission
+    # Deny Permission
 
     ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${ANDROID-ALERT-VERIFY-DEVICE}
     Run Keyword If    '${ALERT}' == 'True'    Bypass Verify Device Alerts
@@ -90,10 +94,13 @@ Signin With User
     Wait Until Page Contains Element    ${AVATAR-IMAGE}
 
 Deny Help Improve Page
+    Wait Until Page Contains Element    ${NOT-NOW-BUTTON}
     Click Element    ${NOT-NOW-BUTTON}
     Wait Until Page Contains Element    ${PERMISSION-MESSAGE}
+    Deny Permission
 
 Deny Permission
+    # Wait Until Page Contains Element    ${DENY-PERMISSION-BUTTON}
     Click Element    ${DENY-PERMISSION-BUTTON}
 
 
@@ -110,10 +117,15 @@ Go To Setting Page
     Wait Until Page Contains Element    ${SETTING-VIEW}
 
 Scroll Down To Sign Out
-    Swipe By Percent    50	90	50	10
+    Swipe By Percent    50	90	50	55
 
-
-# Go To Chat Tab
+Sign Out User
+    Go To Setting Page
+    Scroll Down To Sign Out
+    Wait Until Page Contains Element    //android.widget.LinearLayout[@index="12"]//android.widget.TextView[@resource-id="android:id/title" and @text="Sign out"]
+    Click Element   //android.widget.LinearLayout[@index="12"]//android.widget.TextView[@resource-id="android:id/title" and @text="Sign out"]
+    Wait Until Page Contains Element    //android.widget.TextView[@resource-id="im.vector.app:id/alertTitle" and @text="Sign out"]
+    Click Element    //android.widget.Button[@text="SIGN OUT"]
 
 
 #*** Chat Tab ***
@@ -122,7 +134,7 @@ Create New Conversation
     Click Element    //android.widget.ImageButton[@resource-id="${CHAT-APP-ID}:id/newLayoutCreateChatButton"]
     Wait Until Page Contains Element    ${START-CHAT-BUTTON}
     Click Element     ${START-CHAT-BUTTON}
-    Search For Contact    ${NAME}
+    Search For Contact    @${NAME}:matrix.org
     Click Element    ${CONVERSATION-SEARCH-BUTTON}
     Wait Until Conversation Window Is Open    ${NAME}
 
@@ -131,9 +143,9 @@ Search For Contact
     Wait Until Page Contains Element    //android.widget.TextView[@text="Direct Messages"]
     Input Text    ${CONVERSATION-SEARCH-FIELD}    ${NAME}
     # Wait Until Page Contains Element    //android.widget.TextView[@resource-id="${CHAT-APP-ID}:id/knownUserName",@text="${NAME}"]
-    Wait Until Page Contains Element    //android.widget.TextView[@resource-id="${CHAT-APP-ID}:id/knownUserName" and @text="${NAME}"]
+    Wait Until Page Contains Element    //android.widget.TextView[@resource-id="${CHAT-APP-ID}:id/knownUserID" and @text="${NAME}"]
 
-    Click Element    //android.widget.TextView[@resource-id="${CHAT-APP-ID}:id/knownUserName" and @text="${NAME}"]
+    Click Element    //android.widget.TextView[@resource-id="${CHAT-APP-ID}:id/knownUserID" and @text="${NAME}"]
     Wait Until Page Contains Element    ${CONVERSATION-SEARCH-BUTTON}
 
 Wait Until Page Contains Conversation
