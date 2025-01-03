@@ -78,16 +78,9 @@ Signin With User
     Go To Login Page
     Input Text    ${USERNAME-EDITTEXT}    ${USERNAME}
     Input Password    ${PASSWORD-EDITTEXT}    ${PASSWORD}
-    # Wait Until Page Contains Element    ${LOGIN-SUBMIT-BUTTON}
     Click Element    ${LOGIN-SUBMIT-BUTTON}
-    # Wait Until Page Contains Element     ${HELP-IMPROVE-PAGE}
     ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${HELP-IMPROVE-PAGE}
     Run Keyword If    '${ALERT}' == 'True'    Deny Help Improve Page
-    # Deny Help Improve 
-    # ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${PERMISSION-MESSAGE}
-    # Run Keyword If    '${ALERT}' == 'True'    Deny Permission
-    # Deny Permission
-
     ${ALERT}    Run Keyword And Return Status    Page Should Not Contain Element    ${ANDROID-ALERT-VERIFY-DEVICE}
     Run Keyword If    '${ALERT}' == 'True'    Bypass Verify Device Alerts
 
